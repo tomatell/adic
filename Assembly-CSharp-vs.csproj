@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C2DD09DE-3310-C2D3-072C-22D4D8FFAB2C}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_WSA;ENABLE_PROFILER;UNITY_WINRT_8_1;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\metrosupport/Tools/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Adic\Examples\01_HelloWorld\Scripts\GameRoot.cs" />
+     <Compile Include="Assets\Adic\Examples\01_HelloWorld\Scripts\HelloWorld.cs" />
+     <Compile Include="Assets\Adic\Examples\02_BindingGameObjects\Scripts\GameObjectRotator.cs" />
+     <Compile Include="Assets\Adic\Examples\02_BindingGameObjects\Scripts\GameRoot.cs" />
+     <Compile Include="Assets\Adic\Examples\03_UsingConditions\Scripts\GameObjectRotator.cs" />
+     <Compile Include="Assets\Adic\Examples\03_UsingConditions\Scripts\GameRoot.cs" />
+     <Compile Include="Assets\Adic\Examples\04_Prefabs\Scripts\CubeRotator.cs" />
+     <Compile Include="Assets\Adic\Examples\04_Prefabs\Scripts\GameRoot.cs" />
+     <Compile Include="Assets\Adic\Examples\05_Commander\Scripts\Commands\RotateGameObjectCommand.cs" />
+     <Compile Include="Assets\Adic\Examples\05_Commander\Scripts\Commands\SpawnGameObjectCommand.cs" />
+     <Compile Include="Assets\Adic\Examples\05_Commander\Scripts\GameRoot.cs" />
+     <Compile Include="Assets\Adic\Examples\06_BindingsSetup\Scripts\Behaviours\CubeRotator.cs" />
+     <Compile Include="Assets\Adic\Examples\06_BindingsSetup\Scripts\Bindings\DataBindings.cs" />
+     <Compile Include="Assets\Adic\Examples\06_BindingsSetup\Scripts\Bindings\PrefabBindings.cs" />
+     <Compile Include="Assets\Adic\Examples\06_BindingsSetup\Scripts\Data\CubeRotationSpeed.cs" />
+     <Compile Include="Assets\Adic\Examples\06_BindingsSetup\Scripts\GameRoot.cs" />
+     <Compile Include="Assets\Adic\Examples\07_Factory\Scripts\Behaviours\Cube.cs" />
+     <Compile Include="Assets\Adic\Examples\07_Factory\Scripts\Behaviours\Rotator.cs" />
+     <Compile Include="Assets\Adic\Examples\07_Factory\Scripts\Bindings\FactoryBindings.cs" />
+     <Compile Include="Assets\Adic\Examples\07_Factory\Scripts\Commands\SpawnObjectsCommand.cs" />
+     <Compile Include="Assets\Adic\Examples\07_Factory\Scripts\Factories\CubeFactory.cs" />
+     <Compile Include="Assets\Adic\Examples\07_Factory\Scripts\GameRoot.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\BindingsSetup\BindingPriority.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\BindingsSetup\BindingsSetupExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\BindingsSetup\IBindingsSetup.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\Behaviours\CommandDispatch.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\Behaviours\NamespaceCommandBehaviour.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\Behaviours\TimedCommandDispatch.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\Command.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\CommandDispatcher.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\CommanderContainerExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\CommanderExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\CommanderUtils.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\Exceptions\CommandException.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\ICommand.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\ICommandDispatcher.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\ICommandPool.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\Commander\Types\CommandReference.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\ContextRoot\ContextRoot.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\ContextRoot\IContextRoot.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\EventCaller\EventCallerBehaviour.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\EventCaller\EventCallerContainerExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\EventCaller\IUpdatable.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\MonoInjection\InjectFromContainer.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\MonoInjection\InjectionUtil.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\MonoInjection\MonoInjectionExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\StateInjection\StateInjectionExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\UnityBinding\PrefabBinding.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\UnityBinding\UnityBindingContainerExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Extensions\UnityBinding\UnityBindingExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Attributes\Construct.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Attributes\Inject.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Attributes\PostConstruct.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\Binder.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\BindingDelegates.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\BindingFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\BindingInfo.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\BindingInstance.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\IBinder.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\IBindingConditionFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\IBindingCreator.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\IBindingFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\MultipleBindingConditionFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Binding\SingleBindingConditionFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Cache\IReflectionCache.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Cache\IReflectionFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Cache\ParameterInfo.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Cache\ReflectedClass.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Cache\ReflectionCache.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Cache\ReflectionFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Cache\SetterInfo.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Container\IContainerExtension.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Container\IInjectionContainer.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Container\InjectionContainer.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Exceptions\BinderException.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Exceptions\BindingException.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Exceptions\InjectorException.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Injection\IInjector.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Injection\InjectDelegates.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Injection\InjectionContext.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Injection\InjectionMember.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Injection\Injector.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Types\IFactory.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Util\MethodDelegates.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Util\MethodUtils.cs" />
+     <Compile Include="Assets\Adic\Scripts\Framework\Util\TypeUtils.cs" />
+     <None Include="Assets\Adic\CHANGELOG.txt" />
+     <None Include="Assets\Adic\LICENSE.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
